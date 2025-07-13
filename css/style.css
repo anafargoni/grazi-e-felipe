@@ -32,7 +32,10 @@ h1, h2, h3, h4, h5 {
   color: #f9748f;
 }
 .recados {
-  margin-bottom: 80px; 
+  display: block;
+  width: 100%;
+  margin-bottom: 80px;
+  overflow: hidden; 
 }
 .flip-card {
   background-color: transparent;
