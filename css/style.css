@@ -34,7 +34,8 @@ h1, h2, h3, h4, h5 {
 .recados {
   display: block;
   width: 100%;
-  margin-bottom: 80px;
+  margin-bottom: 120px;
+
   overflow: hidden; 
 }
 .flip-card {
