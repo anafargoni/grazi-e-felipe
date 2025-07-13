@@ -31,7 +31,9 @@ h1, h2, h3, h4, h5 {
 .timeline-event h5 {
   color: #f9748f;
 }
-
+.recados {
+  margin-bottom: 80px; 
+}
 .flip-card {
   background-color: transparent;
   width: 300px;
