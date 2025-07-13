@@ -42,32 +42,30 @@ h1, h2, h3, h4, h5 {
   background-color: transparent;
   width: 300px;
   perspective: 1000px;
-  height: auto;
-  min-height: 200px;
+  height: auto; /* deixa crescer conforme necessário */
 }
 
 .flip-card-inner {
   position: relative;
   width: 100%;
-  height: 100%;
+  min-height: 100%;
   text-align: center;
-  transition: transform 0.6s;
   transform-style: preserve-3d;
+  transition: transform 0.6s;
 }
 
 .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
 }
-
-.flip-card-front,
-.flip-card-back {
-  position: absolute;
+.flip-card-front, .flip-card-back {
+  min-height: 200px;
+}
+.flip-card-front, .flip-card-back {
+  position: relative; /* <-- muda isso! */
   width: 100%;
-  min-height: 100%;
-  height: auto;
-  backface-visibility: hidden;
-  border-radius: 15px;
   padding: 20px;
+  border-radius: 15px;
+  backface-visibility: hidden;
   box-sizing: border-box;
 }
 .flip-card-front {
